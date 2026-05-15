@@ -4,7 +4,7 @@ import { useNavigate, Link } from "react-router-dom";
 
 const API_BASE_URL = window.location.hostname === 'localhost' 
     ? 'http://localhost:5000' 
-    : 'https://notesapp-g47d.onrender.com';
+    : 'https://notesapp-backend-4acz.onrender.com';
 
 export default function Register() {
     const [form, setForm] = useState({
