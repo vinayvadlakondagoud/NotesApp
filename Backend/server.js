@@ -5,7 +5,14 @@ const bcrypt = require("bcryptjs");
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin: [
+        'http://localhost:5173',            
+        'https://notesapp-g47d.onrender.com'
+    ],
+    credentials: true
+}));
+
 app.use(express.json());
 
 mongoose
