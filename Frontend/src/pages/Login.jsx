@@ -2,6 +2,10 @@ import { useState } from "react";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
 
+const API_BASE_URL = window.location.hostname === 'localhost' 
+    ? 'http://localhost:5000' 
+    : 'https://notesapp-backend-4acz.onrender.com';
+
 export default function Login() {
     const [form, setForm] = useState({ email: "", password: "" });
     const [errors, setErrors] = useState({});
@@ -35,7 +39,7 @@ export default function Login() {
         try {
             setLoading(true);
 
-            const res = await axios.post("http://localhost:5000/login", form);
+            const res = await axios.post(`${API_BASE_URL}/login`, form);
 
             localStorage.setItem("user", JSON.stringify(res.data.user));
 
