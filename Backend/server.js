@@ -15,8 +15,10 @@ app.use(cors({
 
 app.use(express.json());
 
+const MONGO_URI = process.env.MONGO_URI || "mongodb://127.0.0.1:27017/notesapp";
+
 mongoose
-  .connect("mongodb://127.0.0.1:27017/notesapp")
+  .connect(MONGO_URI)
   .then(() => console.log("✅ MongoDB Connected"))
   .catch((err) => console.log("❌ DB Error:", err));
 
