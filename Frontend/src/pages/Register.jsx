@@ -2,6 +2,10 @@ import { useState } from "react";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
 
+const API_BASE_URL = window.location.hostname === 'localhost' 
+    ? 'http://localhost:5000' 
+    : 'https://notesapp-g47d.onrender.com';
+
 export default function Register() {
     const [form, setForm] = useState({
         name: "",
@@ -52,7 +56,7 @@ export default function Register() {
         try {
             setLoading(true);
 
-            await axios.post("http://localhost:5000/register", {
+            await axios.post(`${API_BASE_URL}/register`, {
                 name: form.name,
                 email: form.email,
                 password: form.password,
