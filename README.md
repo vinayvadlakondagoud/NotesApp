@@ -227,7 +227,8 @@ This project showcases the ability to:
 
 ## 🔗 Submission
 
-* GitHub Repository: *(Add your link here)*
+* GitHub Repository: *https://github.com/vinayvadlakondagoud/NotesApp*
+* Live Demo: *https://notesapp-g47d.onrender.com*
 
 ---
 
@@ -235,18 +236,7 @@ This project showcases the ability to:
 
 This project reflects **practical full-stack development skills**, attention to detail, and the ability to deliver a complete, user-focused application within a limited time frame.
 
----
 
-# 🔥 BONUS TIP (IMPORTANT)
-
-Before submitting:
-
-* Add your **GitHub repo link**
-* Add **screenshots (optional but powerful)**
-
----
-
-If you want next:
 
 👉 I can make **GitHub description (short)**
 👉 Or prepare **interview answers based on this project**
