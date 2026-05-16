@@ -235,10 +235,3 @@ This project showcases the ability to:
 # 🚀 Final Note
 
 This project reflects **practical full-stack development skills**, attention to detail, and the ability to deliver a complete, user-focused application within a limited time frame.
-
-
-
-👉 I can make **GitHub description (short)**
-👉 Or prepare **interview answers based on this project**
-
-Just say 👍
